@@ -1,0 +1,64 @@
+<html>
+    <head>
+    <title>Hello Developers Am A Designer</title>
+    <script src="main.js" > </script>
+</head>
+     <body>
+                <textarea id="txtArea" onkeypress="onTestChange()"></textarea>
+                
+                 <script>
+                function onTestChange() {
+                    var key = window.event.keyCode;
+                
+                    
+                    if (key === 13) {
+                        document.getElementById("txtArea").value = document.getElementById("txtArea").value + "\n";
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+                </script> 
+                <p>Click the button to display a string in bold.</p>
+                <button onclick="Bold()">Bold It</button>
+                
+                <p>Click the button to display a string in italic.</p>
+                <button onclick="Italic()">Italic It</button>
+                
+                <p>Click the button to display a string underlined.</p>
+                <button onclick="Underline()">underline It</button>    
+                
+                
+                <br></br>
+                
+                <select id="fontlist" onchange="myFunction(this);">
+                        <option value= "Georgia">Georgia</option>
+                        <option value="Palatino">Palatino</option> 
+                        <option value="Book">Antiqua</option>
+                        <option value="Times">New Roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                        <option value="Tahoma">Tahoma</opti ion>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Courier">Courier</option> 
+                        <option value="Lucida">Lucida</option> 
+                      </select> 
+                      
+                
+             <select onchange="siz(this);">
+            <option value ="10px">10px</option>
+            <option value ="9px">9px</option>
+            <option value ="8px">8px</option>
+            <option value ="7px">7px</option>
+            <option value ="6px">6px</option>
+            <option value ="5px">5px</option>
+        </select>               
+                     
+
+     </body>
+
+</html>
